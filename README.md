@@ -1,46 +1,79 @@
-# Vanilla JS Projects
+## Dad Jokes Project
 
-#### Enroll In The Course
+#### HTML Structure
 
-[My Javascript Course](https://www.udemy.com/course/javascript-tutorial-for-beginners-w/?referralCode=DD9FA6C0D976918D3E1C)
+- div.container
+  - button.btn
+  - p.result(dummy text)
 
-#### Support
+#### External Data
 
-Find the Content Useful? [You can always buy me a coffee](https://www.buymeacoffee.com/johnsmilga)
+- the main idea the same, just external data
 
-## You can see all projects in action here
+#### What is an API?
 
-[Projects](https://www.vanillajavascriptprojects.com/)
+[What is an API?](https://www.freecodecamp.org/news/what-is-an-api-in-english-please-b880a3214a82/)
 
-1. Color Flipper
-2. Counter
-3. Reviews
-4. Navbar
-5. Sidebar
-6. Modal
-7. Questions
-8. Menu
-9. Video
-10. Scroll
-11. Tabs
-12. Countdown Timer
-13. Lorem Ipsum
-14. Grocery Bud
-15. Slider
+- https://www.course-api.com/javascript-store-products
+- get store products
 
-#### Course Exclusive
+- https://www.course-api.com/javascript-store-single-product?id=rec43w3ipXvP28vog
+- get single store product
 
-16. Counters (OOP)
-17. Gallery (OOP)
-18. Numbers
-19. Dark Mode
-20. Filters
-21. Dad Jokes
-22. Products
-23. Random User
-24. Cocktails
-25. Slider
-26. Stripe Submenus
-27. Pagination
-28. Wikipedia
-29. Comfy Sloth
+- https://randomuser.me/api/
+- random user
+
+#### Docs
+
+- important
+- search engine
+- test in the browser
+
+#### Dad Jokes Docs
+
+- [Dad Jokes](https://icanhazdadjoke.com/api)
+
+- random joke
+- https://icanhazdadjoke.com/
+
+#### Select Elements
+
+- select btn, result
+- check if both elements selected
+- listen for click events
+
+#### FetchDadJoke Function
+
+- create async function
+- setup fetch
+- set result.textContent = joke
+
+```js
+const fetchDadJoke = async () => {
+  const response = await fetch(url, {
+    headers: {
+      Accept: 'application/json',
+      'User-Agent': 'learning app',
+    },
+  });
+
+  const data = await response.json();
+  result.textContent = data.joke;
+};
+```
+
+#### Loading
+
+- set result equal to - 'Loading...'
+
+#### Error Handling
+
+- try/catch block
+- set result equal to - 'There was an error..'
+
+#### Check Status
+
+- Fetch - only throws an error if cannot resolve
+- Error response still a response
+- check response.ok property
+- throw new Error('Whoops!')

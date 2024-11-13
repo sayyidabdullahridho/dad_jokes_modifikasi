@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dad Jokes Starter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dad Jokes Starter</h1>
+
+      <label for="categorySelect">Choose a Joke Category:</label>
+      <select id="categorySelect">
+        <option value="general">General</option>
+        <option value="programming">Programming</option>
+      </select>
+
+      <button id="newJokeButton">Get a New Joke</button>
+      <button id="saveJokeButton" disabled>Save Joke</button>
+      <button id="copyJokeButton" disabled>Copy Joke</button>
+      <button id="viewSavedJokesButton">View Saved Jokes</button>
+      <button id="refreshButton">Refresh</button> <!-- Added Refresh Button -->
+
+      <p id="jokeText"></p>
+    </div>
+
+    <div id="savedJokesContainer" style="display:none;">
+      <h2>Saved Jokes</h2>
+      <ul id="savedJokesList"></ul>
+    </div>
+
+    <button id="toggleModeButton" class="mode-toggle">Switch to Dark Mode</button>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
